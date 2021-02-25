@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sederhanakan menjadi Object literal di ES6</title>
+</head>
+<body>
+    <script>
+	const newFunction = (firstName, lastName) => {
+  		return {
+    			firstName,
+    			lastName,
+    			fullName: () => {
+      				console.log(firstName + " " + lastName)
+     			}
+  		}
+	}
+ 
+	//Driver Code 
+	newFunction("William", "Imoh").fullName() 
+    </script>
+</body>
+</html>
